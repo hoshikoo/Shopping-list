@@ -48,7 +48,6 @@ table {
 	border-spacing: 0;
 }
 
-
 /** { 
   outline: 1px solid black;
 }*/
@@ -201,8 +200,7 @@ ol{
    list-style-position: inside;
    padding: 0;
   color:#000047;
- 
- }
+}
 
 li{
    background: url("images/memopad_1Line.jpg") no-repeat; 
@@ -253,17 +251,17 @@ ol li .checkbox{
   border-radius: 5px;
   margin-top: 4px;
   margin-left: 20px;
-
 }
+
 #bottom{
-width:600px;
-height:110px;
-
-position:relative;
-background: url("images/memopad_btm.jpg") no-repeat; 
-background-size: 100%;
-margin-top: -2px;
+  width:600px;
+  height:110px;
+  position:relative;
+  background: url("images/memopad_btm.jpg") no-repeat; 
+  background-size: 100%;
+  margin-top: -2px;
 }
+
 #empty{
   font-family:"Oleo Script", cursive, Helvetica, Arial, sans-serif;
   padding:5px;
@@ -276,8 +274,8 @@ margin-top: -2px;
   position: absolute;
   margin-left: 430px;
   margin-top:30px;
-
 }
+
 body.dragging, body.dragging * {
   cursor: move !important;
 }
@@ -298,40 +296,41 @@ ol.comments div.memoline li.placeholder:before {
 }
 
 /* dialog div must be hidden */
+
 #basicModal{
-            display:none;
-            font-family:"Oleo Script", cursive, Helvetica, Arial, sans-serif;
-            /*background-color: #99CCFF;*/
-            color:red;
-            /*background: url("images/oscargrumpy12.jpg") no-repeat; */
-            text-align: center;
-        }
+  display:none;
+  font-family:"Oleo Script", cursive, Helvetica, Arial, sans-serif;
+  /*background-color: #99CCFF;*/
+  color:red;
+  /*background: url("images/oscargrumpy12.jpg") no-repeat; */
+  text-align: center;
+}
 
-        #oscar{
-          width:100%;
-
-        }
+#oscar{
+  width:100%;
+}
 
 #basicModal-2{
-            display:none;
-            font-family:"Oleo Script", cursive, Helvetica, Arial, sans-serif;
-            /*background-color: #99CCFF;*/
-            color:red;
-        }
+  display:none;
+  font-family:"Oleo Script", cursive, Helvetica, Arial, sans-serif;
+  /*background-color: #99CCFF;*/
+  color:red;
+}
 
-        #oscar2{
-          width:100%;
+#oscar2{
+width:100%;
+}
 
-        }
 #basicModal-3{
-            display:none;
-            font-family:"Oleo Script", cursive, Helvetica, Arial, sans-serif;
-            /*background-color: #99CCFF;*/
-            color:red;
-        }     
-        #blocks{
-          width:100%;
-        }
+  display:none;
+  font-family:"Oleo Script", cursive, Helvetica, Arial, sans-serif;
+  /*background-color: #99CCFF;*/
+  color:red;
+}     
+
+#blocks{
+  width:100%;
+}
 .ui-widget-header{
   font-family:"Oleo Script", cursive, Helvetica, Arial, sans-serif;
 }

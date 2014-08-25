@@ -40,22 +40,6 @@ $(document).ready(function(){
 	   };
     }); 
 
-	// $(".comments").on("click", ".delete-button", function(e){
-	// 	if (confirm("Are you sure you want to delete this item?")){
-	// 		$(this).parent().remove()};
-	// 	e.preventDefault();
-		
-	// });
-   
-   // $("#empty").click (function(){
-   // 		if (confirm("Are you sure you want to delete all?")){
-   		// $( "ol li" ).empty();
-   		// $( "ol" ).empty();
-   // 		};
-   // 	 });
-
-			  
-
 
    $(function() {
    	   $("ol.comments").sortable();
@@ -77,14 +61,9 @@ $(document).ready(function(){
 			  	
 			  }
 			});
-			// $(".onoffswitch").on("click", ".onoffswitch-checkbox", function  (e) {
-			//   var method = $(this).hasClass("active") ? "enable" : "disable"
-			//   $(this).removeClass("active")
-			//   $(e.delegateTarget).next().sortable(method)
-			// })
+
    	});
 
-   // show the dialog on click of a button
 			$( "#empty").click(function(){
 			 
 			    /* select the div you want to be a dialog, in our case it is 'basicModal'
@@ -99,6 +78,8 @@ $(document).ready(function(){
    							$( this ).dialog( "close" );
    							var n = $( "li" ).length;
             				$( ".total" ).text(n);
+            				var count = $('.comments :checkbox:checked').length;
+    		 				$(".checked").text(count);
 			            },
 			            "NO": function() {
 			                $( this ).dialog( "close" );
@@ -110,6 +91,7 @@ $(document).ready(function(){
 
 			$(".comments").on("click", ".delete-button", function(e){
 			 var obj = $(this).parent();
+
 			    /* select the div you want to be a dialog, in our case it is 'basicModal'
 			    you can add parameters such as width, height, title, etc. */
 			    $( "#basicModal-2" ).dialog({
@@ -122,6 +104,9 @@ $(document).ready(function(){
 						$( this ).dialog( "close" );
 						var n = $( "li" ).length;
             			$( ".total" ).text(n);
+            			var count = $('.comments :checkbox:checked').length;
+    		 			$(".checked").text(count);
+
 			            },
 			            "NO": function() {
 			                $( this ).dialog( "close" );
@@ -139,17 +124,11 @@ $(document).ready(function(){
     $(".checked").text(count);
 
     var countChecked = function() {
-	  // var n = $( "input:checked" ).length;
-	  // $(".checked" ).text( n );
 	      var count = $('.comments :checkbox:checked').length;
     　　　$(".checked").text(count);
 	};
-	countChecked();
-	 
+	countChecked();	 
 	$( "input[type=checkbox]" ).on( "click", countChecked );
     
-
-
-
 });
 
